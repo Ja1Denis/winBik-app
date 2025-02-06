@@ -1,0 +1,28 @@
+appId: com.winbik.desktop
+productName: BudžetBik
+directories:
+  output: dist-v1.2.1
+files:
+  - src/**/*
+  - build/**/*
+win:
+  target: 
+    - nsis
+  icon: build/ikona.ico
+mac:
+  target:
+    - dmg
+  icon: build/ikona.icns
+linux:
+  target:
+    - AppImage
+  icon: build/ikona.png
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  shortcutName: BudžetBik
+  menuCategory: BudžetBik
+  installerIcon: build/ikona.ico
+  uninstallerIcon: build/ikona.ico
+  artifactName: BudžetBik Setup v1.2.1.exe
